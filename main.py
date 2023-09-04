@@ -20,5 +20,6 @@ if __name__ == '__main__':
         text = input("Enter what you want to say: ")
         if text == 'qq':
             tts_engine("Thank you for using me, see you later.")
+            print("Thank you for using me, see you later.")
             break
         tts_engine(text)
