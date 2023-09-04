@@ -1,22 +1,22 @@
 import pyttsx3
 
 
-if __name__ == '__main__':
-
+def tts_engine(text):
     engine = pyttsx3.init()
-
-    welcome_string = '\nWelcome to RoboSpeaker 1.0. Created by JD.'
-    print(welcome_string)
-    engine.say(welcome_string)
+    engine.say(text)
     engine.runAndWait()
 
-    print("[Type 'qq' to exit.]\n")
 
+welcome_string = '\nWelcome to RoboSpeaker 1.0. Created by Jayaditya Dev.'
+print(welcome_string)
+tts_engine(welcome_string)
+print("[Type 'qq' to exit.]\n")
+
+
+if __name__ == '__main__':
     while True:
-        x = input("Enter what you want to say: ")
-        if x == 'qq':
-            engine.say("Thank you for using me, see you later.")
-            engine.runAndWait()
+        text = input("Enter what you want to say: ")
+        if text == 'qq':
+            tts_engine("Thank you for using me, see you later.")
             break
-        engine.say(x)
-        engine.runAndWait()
+        tts_engine(text)
