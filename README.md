@@ -26,7 +26,7 @@ RoboSpeaker 1.0 is a Python program that uses the pyttsx3 library to convert tex
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/jayadityadev/RoboSpeaker-1.0.git
+   git clone https://github.com/jayadityadev/RoboSpeaker.git
    ```
 
 2. Install the required dependencies:
